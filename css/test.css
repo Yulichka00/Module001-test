@@ -1,11 +1,42 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+/*
+В header нужно установить размер шрифта в значении 20px, а в footer - 13px
+Логотип окрасить в цвет lightgreen, добавить фон в цвете rebeccapurple и установить начертание 700
+
+Все ссылки на сайте сделать в цвете rebeccapurple c начертанием 700 и отключить нижнее подчеркивание (подсказка: text-decoration: none;)
+Во всех заголовках (h1, h2, h3) буквы сделать заглавными и установить для них межбуквенный интервал в значении 0.5px
+Для всего сайта установить межстрочный интервал в значении 1.5 (подсказка: указать в body)
+
+
+*/
+
 .header {
     display: flex;
     border-bottom: 1px solid #000;
     padding-bottom: 10px;
+    font-size: 20px;
 }
 .logo {
     margin-right: 50px;
     text-decoration: none;
+    color: lightgreen;
+    background-color: rebeccapurple;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: rebeccapurple;
+    font-weight: 700;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 ul {
     display: flex;
@@ -28,4 +59,8 @@ ul > li {
 }
 .post {
     padding-bottom: 20px;
+}
+
+footer {
+    font-size: 13px;
 }
