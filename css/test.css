@@ -50,12 +50,27 @@ ul > li {
     border-bottom: 1px solid #000;
 }
 
-/*- в блоке aside убрать border-right и padding-right, чтобы окрасить этот блок в цвет lavender и установить внутренний отступ в значениях 10px 20px
-- блок section окрасить в lavender, добавить внутренние отступы 5px 20px и сделать нижний внешний отступ в значении 20px
-- в ul > li увеличить значение до 30px
-в footer добавить внутренний отступ слева и справа в размере 20px
-(дополнительно) установить в .header еще 1 стиль: align-items: center;
+/*- Указать класс с именем link и присвоить следующие стили:
+
+- фон в цвете rebeccapurple
+- цвет текста white
+- внутренние отступы сверху-снизу 8px и слева-справа 15px
+внешний отступ слева 10px
+2) В стилях нужно для последнего ul > li указать margin-right: 0; Сделать это нужно используя селектор, который позволит выйти на последний li.
 */
+
+.link {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 8px 15px;
+    margin-left: 10px;
+
+}
+
+ul > li:last-child {
+    margin-right: 0;
+}
+
 .aside {
     background-color: lavender;
     padding: 10px 20px;
@@ -66,8 +81,6 @@ ul > li {
     padding: 5px 20px;
     margin-bottom: 20px;
 }
-
-
 
 .post {
     padding-bottom: 20px;
