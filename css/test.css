@@ -71,6 +71,9 @@ ul > li {
     display: block;
     text-align: center;
     margin-top: 10px;
+    align-items: flex-end;
+    position: bottom;
+
 }
 
 ul > li:last-child {
@@ -79,6 +82,10 @@ ul > li:last-child {
 
 ul {
     gap: 30px;
+}
+
+.results section {
+    min-width: 200px;
 }
 
 .aside {
@@ -105,4 +112,18 @@ footer {
     display: flex;
     gap: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    
+    body {
+    /*background-color: aqua;*/
+    }
+
+    .results {
+        display: block;
+        max-width: 200px;
+        gap: 10px;
+    }
+}
+
 
