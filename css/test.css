@@ -85,7 +85,8 @@ ul {
 }
 
 .results section {
-    min-width: 210px;
+    min-width: 200px;
+    max-width: 250px;
     min-height: 180px;
 }
 
